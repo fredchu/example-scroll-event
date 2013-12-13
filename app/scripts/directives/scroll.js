@@ -12,7 +12,7 @@ angular.module( 'scrollEventApp' )
                   $window.bind( 'scroll', function ( e ){
                         left_pos = $window.scrollLeft();
 
-                        if( left_pos < 0 ) return;
+                        if( left_pos < 0 || scope.left_pos == left_pos || scope.hover_try ) return;
 
                         scope.$apply( function (){
                               scope.left_pos = left_pos;
