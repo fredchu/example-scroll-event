@@ -1,8 +1,10 @@
 <div class="hero-unit" catch-scroll ng-controller="MainCtrl">
     <header id="header">
-        <h1>Rinse.io</h1>
+        <h1>
+            <a ng-mouseover="show_try()" ng-mouseleave="hide_try()" href="#">Rinse.io</a>
+        </h1>
         <h2>
-            <a id="link-try" href="#" style="opacity: {{ ( 167 - left_pos  ) / 167 }};">We tell stories behind photography</a>
+            <a id="link-try" href="#" style="opacity: {{try_opa}};">We tell stories behind photography</a>
         </h2>
     </header>
     <h2>Window top position: {{ top_pos }}</h2>

@@ -17,6 +17,7 @@ angular.module( 'scrollEventApp' )
                         scope.$apply( function (){
                               scope.left_pos = left_pos;
                               scope.top_pos  = $window.scrollTop();
+                              scope.try_opa  = ( 167 - scope.left_pos  ) / 167;
                         });
                   });
             }
